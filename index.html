@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Application information for Device NAS Drive Backup, a personal Google Drive backup utility.">
+  <title>Device NAS Drive Backup</title>
+  <style>
+    :root { color-scheme: light dark; font: 18px/1.6 system-ui, sans-serif; }
+    body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem; }
+    h1, h2 { line-height: 1.25; }
+    h1 { font-size: 2rem; } h2 { margin-top: 2rem; font-size: 1.3rem; }
+    a { color: #0757b7; text-underline-offset: .15em; }
+    code { overflow-wrap: anywhere; }
+    footer { margin-top: 3rem; border-top: 1px solid #888; padding-top: 1rem; }
+    @media (prefers-color-scheme: dark) { a { color: #9cc9ff; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Device NAS Drive Backup</h1>
+    <p>Personal backup utility</p>
+    <nav aria-label="Information"><a href="privacy.html">Privacy policy</a></nav>
+  </header>
+  <main>
+    <h2>Purpose</h2>
+    <p>Device NAS Drive Backup is a personal utility for copying the account owner's Google Drive files to storage controlled by that owner. It uses rclone on the owner's computer. It is not a public file-storage or account-registration service.</p>
+    <h2>Google Drive access</h2>
+    <p>The utility requests only <code>https://www.googleapis.com/auth/drive.readonly</code>. It reads file contents and metadata to create and check backups. It does not upload, edit, rename, share or delete files in Google Drive.</p>
+    <h2>Owner-controlled backups</h2>
+    <p>Backup data is stored on the owner's NAS. Previous file versions may be kept for recovery. The owner controls backup retention and deletion on their own storage.</p>
+    <p>This informational website does not provide login, file upload or backup execution. Backed-up files are not sent to this website.</p>
+    <h2>Support</h2>
+    <p>This utility is for the owner's personal use. Contact information for the owner is provided on Google's OAuth consent screen.</p>
+    <p>See the <a href="privacy.html">privacy policy</a> for information about permissions, storage, retention and revoking access.</p>
+  </main>
+  <footer>
+    <p>Last updated: <time datetime="2026-11-15">November 15, 2026</time>.</p>
+    <p>Hosted with GitHub Pages. The host may process normal web requests under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+  </footer>
+</body>
+</html>
